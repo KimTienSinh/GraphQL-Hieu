@@ -2,12 +2,20 @@ const books = [
     {
         id: 1,
         name: 'sachs 1',
-        genre: 'adventure'
+        genre: 'adventure',
+        authorID: 1
     },
     {
         id: 2,
         name: 'sachs 2',
-        genre: 'education'
+        genre: 'education',
+        authorID: 2
+    },
+    {
+        id: 3,
+        name: 'sachs 3',
+        genre: 'adventure',
+        authorID: 1
     }
 ]
 
