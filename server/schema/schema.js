@@ -2,7 +2,7 @@ const {qlg, gql} = require('apollo-server-express')
 
 const typeDefs = gql`
     type Book {
-        id: ID
+        id: ID!
         name: String
         genre: String
         author: Author
@@ -23,6 +23,15 @@ const typeDefs = gql`
     authors: [Author]
     author(id: ID!): Author
     }
+
+    # ADD 
+
+    type Mutation {
+      createAuthor(id: ID!, name: String, age : Int) : Author
+      createBook(id: ID!, name: String, genre: String, authorID: ID!): Book
+    }
+
+
 `
 
 
